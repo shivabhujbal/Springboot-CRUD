@@ -15,18 +15,32 @@ public class Student {
 	private int rollNo;
 	private String name;
 	private String className;
+	private String division;
+
+	public String getDivision() {
+		return division;
+	}
+
+	public void setDivision(String division) {
+		this.division = division;
+	}
+
+	public String getBatch() {
+		return batch;
+	}
+
+	public void setBatch(String batch) {
+		this.batch = batch;
+	}
+
+	private String  batch;
 	
 	public Student() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Student(int rollNo, String name, String className) {
-		super();
-		this.rollNo = rollNo;
-		this.name = name;
-		this.className = className;
-	}
+
 
 	public int getRollNo() {
 		return rollNo;
@@ -42,6 +56,14 @@ public class Student {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public Student(int rollNo, String name, String className, String division, String batch) {
+		this.rollNo = rollNo;
+		this.name = name;
+		this.className = className;
+		this.division = division;
+		this.batch = batch;
 	}
 
 	public String getClassName() {
