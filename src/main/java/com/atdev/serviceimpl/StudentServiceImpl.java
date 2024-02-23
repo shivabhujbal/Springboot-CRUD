@@ -41,7 +41,7 @@ public class StudentServiceImpl implements StudentService {
 			student2.setClassName(student.getName());
 			student2.setRollNo(student2.getRollNo());
 			student2.setBatch(student.getBatch());
-			student2.setDivision(student.getDivision();
+			student2.setDivision(student.getDivision());
 			return "Updated Successfully";
 
 		} else {
